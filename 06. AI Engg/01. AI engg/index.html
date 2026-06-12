@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Babar's Stock Predictions</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="app-container">
+
+    <header>
+        <div class="header-row">
+
+            <h1>Aditya</h1>
+
+            <img
+                src="./dave.png"
+                alt="Dodgy Dave"
+                class="dave-img"
+            >
+
+            <h1>Babar's</h1>
+
+        </div>
+
+        <p class="subtitle">Stock Predictions</p>
+    </header>
+
+    <main>
+
+        <!-- ACTION PANEL -->
+
+        <section class="action-panel">
+
+            <label for="ticker-input">
+                Add up to 3 stock tickers below to get a super accurate stock predictions report 👇
+            </label>
+
+            <form id="ticker-input-form">
+
+                <div class="input-container">
+
+                    <input
+                        id="ticker-input"
+                        type="text"
+                        placeholder="MSFT"
+                        maxlength="5"
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="submit"
+                        class="add-btn"
+                    >
+                        +
+                    </button>
+
+                </div>
+
+            </form>
+
+            <div class="tickers-choice-display">
+                Your tickers will appear here...
+            </div>
+
+            <button
+                class="generate-report-btn"
+                disabled
+            >
+                GENERATE REPORT
+            </button>
+
+            <p class="accuracy-text">
+                Always correct 15% of the time!
+            </p>
+
+        </section>
+
+        <!-- LOADING PANEL -->
+
+        <section class="loading-panel">
+
+            <div class="spinner"></div>
+
+            <p id="api-message">
+                Creating report...
+            </p>
+
+        </section>
+
+        <!-- REPORT PANEL -->
+
+        <section class="output-panel">
+
+        </section>
+
+    </main>
+
+    <footer>
+        © This is not real financial advice!
+    </footer>
+
+</div>
+
+<script type="module" src="index.js"></script>
+
+</body>
+</html>

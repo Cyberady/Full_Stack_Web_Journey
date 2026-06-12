@@ -1,0 +1,22 @@
+a {
+    text-align: center;
+    color: white;
+    margin: 5px;
+    padding: 25px 0;
+    background-color: #e5383b;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+}
+
+a:hover {
+    background-image: url("image.png");
+    background-size: cover;
+    /* background-color: #ba181b; */
+    /* font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    /* justify-content: end; */
+    /* align-items: start;  */
+}

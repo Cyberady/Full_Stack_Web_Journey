@@ -1,0 +1,22 @@
+body {
+    margin: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+article {
+    text-align: center;
+    color: red;
+    cursor: crosshair;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+}
+
+/*
+Challenge:
+Navigate to the Stack Overflow question and pick a 
+few inherited CSS properties. Add them to the article
+tag to see how they work.
+*/

@@ -1,0 +1,10 @@
+{
+    "name": "Aditya Babar",
+    "age": 21,
+    "gender": "Male",
+    "hobbies": [
+        "Coding",
+        "Traveling",
+        "Cooking"
+    ]
+}

@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background: url("https://www.andbeyond.com/wp-content/uploads/sites/5/Chhatrapati-Shivaji-Terminus-railway-station-mumbai.jpg") center/cover;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    position: relative;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-section h1,
+.hero-section p {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ACTIVITY SECTION */
+.activity {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.activity h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* FLEX GRID */
+.act {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* ACTIVITY CARD */
+.card-act {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.card-act:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.card-act img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-act p {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* GUIDE CARD */
+.card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    max-width: 450px;
+    margin: 60px auto;
+
+    padding: 20px;
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* AVATAR */
+#avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* TEXT */
+.card-content h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.card-content p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.card-content h4 {
+    margin-top: 10px;
+    font-weight: 600;
+}

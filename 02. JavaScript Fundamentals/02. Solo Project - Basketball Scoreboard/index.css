@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background: #e6ede8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* CARD */
+.card {
+  background: #1c2747;
+  padding: 45px 80px;
+  border-radius: 22px;
+  border: 6px solid #e8e8e8;
+  display: flex;
+  gap: 140px;
+}
+
+/* TEAM */
+.team {
+  text-align: center;
+  color: #f0f0f0;
+}
+
+/* TITLE */
+.team h2 {
+  font-size: 34px;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+/* SCORE */
+.score {
+  background: #080808;
+  color: #ff2e2e;
+  font-size: 90px;
+  padding: 25px 65px;
+  border-radius: 10px;
+  font-family: 'Digital-7 Mono', monospace;
+  margin-bottom: 25px;
+  box-shadow: inset 0 0 18px rgba(255, 0, 0, 0.8);
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.buttons button {
+  background: transparent;
+  border: 2px solid #8ea2c6;
+  color: #8ea2c6;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buttons button:hover {
+  background: #8ea2c6;
+  color: #1c2747;
+}

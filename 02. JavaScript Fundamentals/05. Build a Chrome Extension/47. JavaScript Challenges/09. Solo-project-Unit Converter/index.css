@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    width: 400px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Top Section */
+.top {
+    background: linear-gradient(135deg, #6a11cb, #8e2de2);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.top h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.top input {
+    width: 80px;
+    height: 60px;
+    font-size: 28px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: transparent;
+    color: white;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.top input::placeholder {
+    color: white;
+}
+
+.top button {
+    display: block;
+    margin: auto;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    background: white;
+    color: #6a11cb;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.top button:hover {
+    background: #eee;
+}
+
+/* Bottom Section */
+.bottom {
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #6a11cb;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #555;
+}

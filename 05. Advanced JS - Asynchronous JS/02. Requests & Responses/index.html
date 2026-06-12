@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Requests & Responses</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+
+      <!-- Hero Section -->
+      <header class="hero">
+        <h1>Understanding Requests & Responses</h1>
+        <p>
+          Learn how clients and servers communicate on the internet using
+          requests and responses.
+        </p>
+      </header>
+
+      <!-- Request Section -->
+      <section class="card">
+        <div class="section-title">
+          <span class="badge request">Request</span>
+          <h2>What is a Request?</h2>
+        </div>
+
+        <ul>
+          <li>
+            A request happens when a device asks for a resource from a server.
+          </li>
+
+          <li>
+            Resources can include HTML pages, images, JSON data,
+            authentication tokens, and more.
+          </li>
+
+          <li>
+            Requests usually require an internet connection to reach the server.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Response Section -->
+      <section class="card">
+        <div class="section-title">
+          <span class="badge response">Response</span>
+          <h2>What is a Response?</h2>
+        </div>
+
+        <ul>
+          <li>
+            A response is the reply sent back from the server.
+          </li>
+
+          <li>
+            The response may contain requested data such as HTML, JSON, images,
+            or files.
+          </li>
+
+          <li>
+            The server can also reject requests if the client is not authorized.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Flow Diagram -->
+      <section class="card flow-card">
+        <h2>Request / Response Flow</h2>
+
+        <div class="flow">
+
+          <div class="device client">
+            <h3>Client</h3>
+            <div class="device-box">💻📱</div>
+          </div>
+
+          <div class="communication">
+
+            <div class="message request-line">
+              <p>"index.html please 😊"</p>
+              <span>➡</span>
+            </div>
+
+            <div class="message success">
+              <span>⬅</span>
+              <p>"Here it is! (200 OK)"</p>
+            </div>
+
+            <div class="message request-line">
+              <p>"I need the Google Font too 😇"</p>
+              <span>➡</span>
+            </div>
+
+            <div class="message success">
+              <span>⬅</span>
+              <p>"Here it is! (200 OK)"</p>
+            </div>
+
+            <div class="message request-line">
+              <p>"Can I access secret data? 😈"</p>
+              <span>➡</span>
+            </div>
+
+            <div class="message error">
+              <span>⬅</span>
+              <p>"403 Forbidden"</p>
+            </div>
+
+          </div>
+
+          <div class="device server">
+            <h3>Server</h3>
+            <div class="server-box">
+              <div class="server-light"></div>
+              <div class="server-light"></div>
+              <div class="server-light"></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </body>
+</html>

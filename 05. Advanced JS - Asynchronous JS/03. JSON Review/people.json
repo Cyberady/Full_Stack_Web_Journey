@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Simba",
+        "age": 0.7,
+        "gender": "Male",
+        "hobbies": [
+            "Eating",
+            "Sleeping",
+            "Running Outside"
+        ]
+    },
+    {
+        "name": "Michael",
+        "age": 50,
+        "gender": "Male",
+        "hobbies": [
+            "Skateboarding",
+            "guitar"
+        ]
+    }
+]

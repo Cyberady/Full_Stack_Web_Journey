@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>Generate a <span>random password</span></h1>
+    <p>Never use an insecure password again.</p>
+
+    <div class="controls">
+        
+        <div class="length-control">
+            <div class="length-header">
+                <label>Password Length</label>
+                <span id="lengthValue">12</span>
+            </div>
+            <input type="range" min="6" max="20" value="12" id="lengthSlider">
+        </div>
+
+        <div class="toggles">
+            <label class="toggle">
+                <input type="checkbox" id="numbers" checked>
+                <span>Numbers</span>
+            </label>
+
+            <label class="toggle">
+                <input type="checkbox" id="symbols" checked>
+                <span>Symbols</span>
+            </label>
+        </div>
+
+    </div>
+
+    <button id="generateBtn">Generate Passwords</button>
+
+    <hr>
+
+    <div class="outputs">
+        <div class="box" id="pass1">Click Generate</div>
+        <div class="box" id="pass2">Click Generate</div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises in JavaScript</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+
+    <!-- Background Glow -->
+    <div class="bg-gradient"></div>
+
+    <div class="container">
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="floating cube cube-1"></div>
+        <div class="floating cube cube-2"></div>
+        <div class="floating cube cube-3"></div>
+
+        <h1>Promises</h1>
+
+        <p>
+          A Promise represents a future value that may complete successfully
+          or fail later.
+        </p>
+      </section>
+
+      <!-- Analogy -->
+      <section class="card">
+        <h2>Analogy: A Job Interview</h2>
+
+        <div class="analogy-box">
+          <p class="quote">
+            “We’ll let you know within a week.”
+          </p>
+
+          <p>
+            That statement is a promise.  
+            You don't know the result immediately.
+            You wait for the response later.
+          </p>
+        </div>
+      </section>
+
+      <!-- Promise States -->
+      <section class="card">
+
+        <h2>Promise States</h2>
+
+        <div class="states">
+
+          <div class="state-box pending">
+            <h3>Pending</h3>
+            <p>
+              The promise is still waiting to complete.
+            </p>
+          </div>
+
+          <div class="state-box fulfilled">
+            <h3>Resolved / Fulfilled</h3>
+            <p>
+              The promise completed successfully.
+            </p>
+          </div>
+
+          <div class="state-box rejected">
+            <h3>Rejected</h3>
+            <p>
+              The promise failed or something went wrong.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Example -->
+      <section class="card">
+
+        <h2>Simple Promise Example</h2>
+
+        <div class="code-block">
+<pre><code>fetch("https://api.example.com/data")
+  .then(response => response.json())
+  .then(data => {
+      console.log(data)
+  })
+  .catch(error => {
+      console.log(error)
+  })</code></pre>
+        </div>
+
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>
+          Promises make asynchronous JavaScript easier to handle.
+        </p>
+      </footer>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URLs & Endpoints</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+
+      <!-- Hero Section -->
+      <header class="hero">
+        <span class="tag">Web & APIs</span>
+
+        <h1>URLs & API Endpoints</h1>
+
+        <p>
+          Learn how applications communicate with servers using URLs and API
+          endpoints.
+        </p>
+      </header>
+
+      <!-- URL Section -->
+      <section class="card">
+        <h2>What is a URL?</h2>
+
+        <p>
+          URL stands for
+          <strong>Uniform Resource Locator</strong>.
+        </p>
+
+        <p>
+          A URL is the address used to access resources on the internet.
+        </p>
+
+        <div class="code-block">
+<pre><code>https://example.com/users/profile</code></pre>
+        </div>
+
+        <h3>Parts of a URL</h3>
+
+        <ul>
+          <li><strong>https://</strong> → Protocol</li>
+          <li><strong>example.com</strong> → Domain Name</li>
+          <li><strong>/users/profile</strong> → Path</li>
+        </ul>
+      </section>
+
+      <!-- Endpoint Section -->
+      <section class="card">
+        <h2>What is an Endpoint?</h2>
+
+        <p>
+          An endpoint is a specific URL where an API can access a resource.
+        </p>
+
+        <p>
+          APIs expose multiple endpoints for different operations like getting
+          users, posts, products, or authentication data.
+        </p>
+
+        <div class="code-block">
+<pre><code>https://api.example.com/users</code></pre>
+        </div>
+
+      </section>
+
+      <!-- Examples -->
+      <section class="card">
+        <h2>Endpoint Examples</h2>
+
+        <div class="endpoint-grid">
+
+          <div class="endpoint-box">
+            <span class="method get">GET</span>
+            <code>/users</code>
+            <p>Fetch all users</p>
+          </div>
+
+          <div class="endpoint-box">
+            <span class="method post">POST</span>
+            <code>/users</code>
+            <p>Create a new user</p>
+          </div>
+
+          <div class="endpoint-box">
+            <span class="method put">PUT</span>
+            <code>/users/1</code>
+            <p>Update user data</p>
+          </div>
+
+          <div class="endpoint-box">
+            <span class="method delete">DELETE</span>
+            <code>/users/1</code>
+            <p>Delete a user</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Flow -->
+      <section class="card">
+        <h2>How It Works</h2>
+
+        <div class="flow">
+
+          <div class="flow-box">
+            <h3>Client</h3>
+            <p>Browser or App sends request</p>
+          </div>
+
+          <div class="arrow">➡</div>
+
+          <div class="flow-box">
+            <h3>Endpoint</h3>
+            <p>Server receives request at endpoint</p>
+          </div>
+
+          <div class="arrow">➡</div>
+
+          <div class="flow-box">
+            <h3>Response</h3>
+            <p>Server sends back JSON or data</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>
+          URLs help locate resources, while endpoints help APIs provide data.
+        </p>
+      </footer>
+
+    </div>
+  </body>
+</html>

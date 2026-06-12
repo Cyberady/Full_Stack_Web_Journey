@@ -1,0 +1,291 @@
+/* ===================================
+   CLEAN SMOOTH GRADIENT BACKGROUND
+=================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --white: #ffffff;
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.72);
+
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+
+  --pending: #facc15;
+  --success: #4ade80;
+  --danger: #f87171;
+
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   Global
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--white);
+  padding: 60px 20px;
+
+  /* SMOOTH CLEAN GRADIENT */
+  background: linear-gradient(
+    135deg,
+    #d18367 0%,
+    #c9787b 25%,
+    #a77ca5 55%,
+    #d5b17b 100%
+  );
+
+  background-attachment: fixed;
+}
+
+/* =========================
+   Layout
+========================= */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: -2px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* =========================
+   Floating Cubes
+========================= */
+
+.cube {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    145deg,
+    #ffffff,
+    #5b4bff
+  );
+
+  box-shadow:
+    12px 12px 25px rgba(0, 0, 0, 0.25);
+
+  transform: rotate(20deg);
+}
+
+.cube-1 {
+  top: 20px;
+  left: 18%;
+}
+
+.cube-2 {
+  top: 40px;
+  right: 18%;
+}
+
+.cube-3 {
+  bottom: 20px;
+  left: 50%;
+}
+
+.floating {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0px) rotate(20deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(20deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(20deg);
+  }
+
+}
+
+/* =========================
+   Cards
+========================= */
+
+.card {
+  background: var(--card-bg);
+
+  backdrop-filter: blur(18px);
+
+  border: 1px solid var(--border);
+
+  border-radius: 28px;
+
+  padding: 40px;
+
+  margin-bottom: 30px;
+
+  box-shadow: var(--shadow);
+}
+
+/* =========================
+   Typography
+========================= */
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 22px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--text);
+  line-height: 1.9;
+}
+
+/* =========================
+   Analogy
+========================= */
+
+.analogy-box {
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 22px;
+  padding: 35px;
+}
+
+.quote {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* =========================
+   States
+========================= */
+
+.states {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+}
+
+.state-box {
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  border-radius: 22px;
+
+  padding: 28px;
+}
+
+.pending h3 {
+  color: var(--pending);
+}
+
+.fulfilled h3 {
+  color: var(--success);
+}
+
+.rejected h3 {
+  color: var(--danger);
+}
+
+/* =========================
+   Code Block
+========================= */
+
+.code-block {
+  background: rgba(0,0,0,0.28);
+
+  border-radius: 22px;
+
+  overflow-x: auto;
+}
+
+pre {
+  padding: 30px;
+}
+
+code {
+  color: white;
+  font-family: Consolas, monospace;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: rgba(255,255,255,0.75);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 40px 16px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero {
+    padding: 70px 10px;
+  }
+
+  .card {
+    padding: 26px;
+  }
+
+  .quote {
+    font-size: 1.5rem;
+  }
+
+  .cube {
+    width: 50px;
+    height: 50px;
+  }
+
+}
